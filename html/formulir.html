@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulir Pendaftaran Mahasiswa Baru</h1>
+
+    <p>
+        <a href="profil.html"> &larr; Kembali ke Halaman Profil</a>
+    </p>
+
+    <hr>
+
+    <h2>Tabel Biodata</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>NIM</th>
+                <th>Jurusan</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rendika</td>
+                <td>2305101105</td>
+                <td>Teknik Informatika</td>
+                <td>rendikaafriano@mail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>Daftar Favorit</h2>
+
+    <h3>Mata Kuliah Favorit</h3>
+    <ol>
+        <li>Pemrograman Web</li>
+        <li>Internet of things</li>
+        <li>Jaringan Komputer</li>
+    </ol>
+
+    <h3>Hobi</h3>
+    <ul>
+        <li>Jalan-jalan kaki</li>
+        <li>Olahraga</li>
+    </ul>
+
+    <hr>
+
+    <h2>Formulir Pendaftaran</h2>
+    <form action="/submit_pendaftaran" method="post">
+        
+        <p>
+            <label for="nama_lengkap">Nama Lengkap:</label><br>
+            <input type="text" id="nama_lengkap" name="nama_lengkap" required>
+        </p>
+
+        <p>
+            <label for="email_pendaftar">Email:</label><br>
+            <input type="email" id="email_pendaftar" name="email_pendaftar" required>
+        </p>
+
+        <p>
+            <label for="password_pendaftar">Password:</label><br>
+            <input type="password" id="password_pendaftar" name="password_pendaftar" required>
+        </p>
+
+        <p>
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" id="pria" name="jenis_kelamin" value="Pria" required>
+            <label for="pria">Pria</label><br>
+            <input type="radio" id="wanita" name="jenis_kelamin" value="Wanita">
+            <label for="wanita">Wanita</label>
+        </p>
+
+        <p>
+            <label>Hobi:</label><br>
+            <input type="checkbox" id="hobi_coding" name="hobi[]" value="Coding">
+            <label for="hobi_coding">Coding</label><br>
+            <input type="checkbox" id="hobi_membaca" name="hobi[]" value="Membaca">
+            <label for="hobi_membaca">Membaca</label><br>
+            <input type="checkbox" id="hobi_olahraga" name="hobi[]" value="Olahraga">
+            <label for="hobi_olahraga">Olahraga</label>
+        </p>
+
+        <p>
+            <label for="jurusan_pilihan">Jurusan Pilihan:</label><br>
+            <select id="jurusan_pilihan" name="jurusan_pilihan" required>
+                <option value="" disabled selected>-- Pilih Jurusan --</option>
+                <option value="ti">Teknik Informatika</option>
+                <option value="si">Sistem Informasi</option>
+                <option value="ak">Akuntansi</option>
+                <option value="mn">Manajemen</option>
+            </select>
+        </p>
+
+        <p>
+            <button type="submit">Daftar Sekarang</button>
+        </p>
+
+    </form>
+
+    <hr>
+
+    <h2>Multimedia: Video YouTube tentang Web Development</h2>
+    <p><iframe>`.</p>
+    <iframe width="200" height="350" 
+            src="https://www.youtube.com/embed/videoseries?si=xXQW7D7gJ_1JkMvK&amp;list=PLjEEO7K9iQcR_34yC2XQ2k2-V7-2rYq_r" 
+            title="Video YouTube tentang Teknologi/Web Development" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+    </iframe>
+
+    <p> <a href="profil.html">← Kembali ke Halaman Profil</a></p>
+
+</body>
+</html>

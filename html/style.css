@@ -1,0 +1,264 @@
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4f0ff 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            padding: 30px;
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        h1, h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #2c3e50;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        h1:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, #6dd5ed, #2193b0);
+            border-radius: 2px;
+        }
+        
+        h2 {
+            margin: 25px 0 15px;
+            font-size: 1.5rem;
+            color: #3498db;
+            border-left: 4px solid #6dd5ed;
+            padding-left: 10px;
+        }
+        
+        .Profilku-header {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+            background: linear-gradient(135deg, #e4f0ff 0%, #f0f9ff 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .profile-foto {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-foto:hover {
+            transform: scale(1.05);
+        }
+        
+        .profile-infoku {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .profile-infoku p {
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+            padding: 8px 0;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+        
+        .profile-infoku strong {
+            color: #3498db;
+            width: 180px;
+            display: inline-block;
+        }
+        
+        .social-media {
+            background-color: #f8fdff;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 50px;
+            color: white;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .social-links a:nth-child(1) {
+            background: linear-gradient(45deg, #E1306C, #F77737);
+        }
+        
+        .social-links a:nth-child(2) {
+            background: linear-gradient(45deg, #25D366, #128C7E);
+        }
+        
+        .social-links a:nth-child(3) {
+            background: linear-gradient(45deg, #1DA1F2, #0d8bd9);
+        }
+        
+        .social-links a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .skills {
+            background-color: #f8fdff;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        
+        .skill-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .skill-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .skill-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 15px;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .skill-item:hover .skill-icon {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .skill-item span {
+            margin-top: 8px;
+            font-weight: 600;
+            color: #3498db;
+        }
+        
+        .form-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            text-decoration: none;
+        }
+        
+        .form-link a {
+            display: inline-block;
+            text-decoration: none;
+            background: linear-gradient(45deg, #6dd5ed, #2193b0);
+            color: white;
+            padding: 14px 35px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(33, 147, 176, 0.3);
+        }
+        
+        .form-link a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(33, 147, 176, 0.4);
+            background: linear-gradient(45deg, #2193b0, #6dd5ed);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @media (max-width: 768px) {
+            .Profilku-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-infoku p {
+                text-align: left;
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+            
+            .skill-list {
+                justify-content: center;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .profile-foto {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .social-links a {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+        }
